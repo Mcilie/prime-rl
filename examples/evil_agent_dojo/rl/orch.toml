@@ -4,7 +4,7 @@ seq_len = 4096
 max_steps = 100
 
 [model]
-name = "Qwen/Qwen3-1.7B-Instruct"
+name = "Qwen/Qwen3-1.7B"
 
 [sampling]
 max_tokens = 1024

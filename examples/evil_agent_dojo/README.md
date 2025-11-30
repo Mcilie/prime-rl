@@ -47,7 +47,7 @@ Start the inference server with tool calling enabled:
 
 ```bash
 # In the `Inference` pane
-uv run inference --model.name Qwen/Qwen3-1.7B-Instruct --model.enable_auto_tool_choice true --model.tool_call_parser hermes
+uv run inference --model.name Qwen/Qwen3-1.7B --model.enable_auto_tool_choice true --model.tool_call_parser hermes
 ```
 
 Evaluate the base model on the workspace suite:
@@ -55,7 +55,7 @@ Evaluate the base model on the workspace suite:
 ```bash
 # In the `Trainer` pane
 uv run vf-eval evil-agent-dojo-be-like \
-  -m Qwen/Qwen3-1.7B-Instruct \
+  -m Qwen/Qwen3-1.7B \
   -b http://localhost:8000/v1 \
   -n 20 \
   --max-tokens 1024 \
